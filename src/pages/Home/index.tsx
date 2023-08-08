@@ -9,6 +9,8 @@ import LogoFacebook from "../../assets/img/facebook.svg"
 import LogoInstagram from "../../assets/img/instagram.svg"
 import LogoLinkedin from "../../assets/img/linkedin.svg"
 
+import ListaServ from "../ListaServ"
+
 
 function Home() {
     // Paranaue de typescript
