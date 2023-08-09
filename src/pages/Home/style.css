@@ -42,7 +42,7 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+main>h1 {
     position: absolute;
     left: -999em;
     width: 1em;
@@ -69,7 +69,7 @@ h3 {
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
 }
 
-main ul li {
+.clientes_texto>ul, li {
     text-transform: uppercase;
     font-size: 22px;
     margin: 10px 0;

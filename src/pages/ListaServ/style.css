@@ -171,7 +171,7 @@ header nav a {
 main {
     background-image:
         linear-gradient(180deg, #060821 0%, #06082120 25%, #0608218f 80%, #060821 100%),
-        url("../img/background_login.png");
+        url("../../assets/img/background_login.png");
     min-height: calc(100vh - 339px);
     background-size: cover;
     background-repeat: no-repeat;
@@ -227,6 +227,10 @@ hr {
 
 .wrapper_lista {
     width: 85%;
+}
+
+.wrapper_lista li{
+    text-transform: none;
 }
 
 .wrapper_form {
@@ -326,6 +330,10 @@ hr {
 
 .topo_servico h3 {
     width: 65%;
+}
+
+.topo_servico p{
+    text-transform: none;
 }
 
 .servico p {

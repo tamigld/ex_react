@@ -1,3 +1,5 @@
+import "./style.css"
+
 import Logo from "../../assets/img/logo.svg"
 import mostrarMenu from "../Home"
 
