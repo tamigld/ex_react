@@ -69,7 +69,7 @@ h3 {
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
 }
 
-.clientes_texto>ul, li {
+.clientes_texto>ul, .clientes_texto>li {
     text-transform: uppercase;
     font-size: 22px;
     margin: 10px 0;
@@ -511,9 +511,14 @@ footer {
     min-width: 250px;
 }
 
-.rodape_conteudo_paginas ul {
+.rodape_conteudo_paginas>ul {
     font-family: var(--font2);
     font-size: 18px;
+    text-transform: none;
+}
+
+.rodape_conteudo_paginas>li{
+    text-decoration: none;
 }
 
 .rodape_conteudo_contatos {
