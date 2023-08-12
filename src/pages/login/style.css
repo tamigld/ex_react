@@ -1,7 +1,7 @@
 main {
     background-image:
         linear-gradient(180deg, #060821 0%, #06082120 25%, #0608218f 80%, #060821 100%),
-        url("../img/background_login.png");
+        url("../../assets/img/background_login.png");
     min-height: calc(100vh - 339px);
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,6 +27,7 @@ main {
     padding: 50px 0;
     color: var(--branco);
     margin-top: 6vh;
+    margin-bottom: 10vh;
 }
 
 h1 {
