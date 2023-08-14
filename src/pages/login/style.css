@@ -1,4 +1,4 @@
-main {
+#page-login {
     background-image:
         linear-gradient(180deg, #060821 0%, #06082120 25%, #0608218f 80%, #060821 100%),
         url("../../assets/img/background_login.png");
@@ -7,13 +7,13 @@ main {
     background-repeat: no-repeat;
 }
 
-.container_login {
+#page-login .container_login {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.login_conteudo {
+#page-login .login_conteudo {
     background: linear-gradient(114.61deg, #ffffff0d 1.08%, #ffffff1e 99.26%);
     box-shadow: 30px 30px 60px #00000080;
     border: 1px solid #ffffffcc;
@@ -30,14 +30,14 @@ main {
     margin-bottom: 10vh;
 }
 
-h1 {
+#page-login h1 {
     font-family: var(--font1);
     font-size: 50px;
     text-align: center;
 }
 
 
-hr{
+#page-login hr{
     margin: 20px 0;
     width: 80%;
     height: 5px;
@@ -46,7 +46,7 @@ hr{
     border-radius: 50%;
 }
 
-.login_formulario {
+#page-login .login_formulario {
     width: 95%;
     max-width: 460px;
     display: flex;
@@ -54,18 +54,18 @@ hr{
     font-family: var(--font2);
 }
 
-.login_box_input {
+#page-login .login_box_input {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 15px 0;
 }
 
-label {
+#page-login label {
     font-size: 20px;
 }
 
-.login_box_input>input {
+#page-login .login_box_input>input {
     width: 100%;
     padding: 8px;
     border-radius: 20px;
@@ -77,26 +77,26 @@ label {
     font-size: 16px;
 }
 
-.login_box_input>input:focus-visible{
+#page-login .login_box_input>input:focus-visible{
     outline: 2px solid var(--rosa);
 }
 
 /* Cor de fundo do autocomplete */
-input:-webkit-autofill {
+#page-login input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #524569 inset;
 }
 
 /* Cor do texto do autocomplete */
-input:-webkit-autofill {
+#page-login input:-webkit-autofill {
     -webkit-text-fill-color: var(--branco);
 }
 
-.login_box_input>input::placeholder {
+#page-login .login_box_input>input::placeholder {
     color: #ffffff80;
     font-size: 15px;
 }
 
-.login_botao {
+#page-login .login_botao {
     align-self: center;
     font-family: var(--font1);
     color: var(--branco);

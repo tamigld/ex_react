@@ -1,4 +1,5 @@
 import "./style.css"
+import CardDev from "../../components/cardDev"
 
 function ListaDevs(){
     
@@ -36,20 +37,7 @@ function ListaDevs(){
                             </div>
                         </li>
                         <li>
-                            <div className="dev">
-                                <div className="grupo_contato">
-                                    <img src="https://github.com/JessicaSanto.png" alt=""/>
-                                    <div className="contato_dev">
-                                        <h3>Jessica Franzon</h3>
-                                        <p>jessica@email.com</p>
-                                    </div>
-                                </div>
-                                <div className="techs">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>React</span>
-                                </div>
-                            </div>
+                        <CardDev foto="https://github.com/JessicaSanto.png" nome="Jéssica" email="jessica@email.com"/>
                         </li>
                         <li>
                             <div className="dev">
