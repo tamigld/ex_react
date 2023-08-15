@@ -11,9 +11,11 @@ export default function CardDev(props: any) {
                     </div>
                 </div>
                 <div className="techs">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>React</span>
+                    {
+                        props.techs.map((tech: string, index: number) => {
+                            return <span key={index}>{tech}</span>
+                        })
+                    }
                 </div>
             </div>
         </>
