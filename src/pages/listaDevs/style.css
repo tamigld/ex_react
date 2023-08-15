@@ -25,7 +25,7 @@
     height: 100vh;
     z-index: 1;
     overflow: hidden;
-    transition: #lista-devs .5s;
+    transition: .5s;
     backdrop-filter: blur(10px);
 }
 
@@ -86,7 +86,7 @@
     display: block;
     margin-top: 5px;
     position: relative;
-    transition: #lista-devs .5s;
+    transition: .5s;
 }
 
 #lista-devs .barras::after {
@@ -98,7 +98,7 @@
     background-color: var(--branco);
     position: absolute;
     top: 12px;
-    transition: #lista-devs .5s;
+    transition: .5s;
 }
 
 #lista-devs .barras::before {
@@ -110,7 +110,7 @@
     background-color: var(--branco);
     position: absolute;
     top: -12px;
-    transition: #lista-devs .5s;
+    transition: .5s;
 }
 
 #lista-devs .ativo #lista-devs .barras {
@@ -200,7 +200,7 @@
     flex-direction: column;
     align-items: center;
     
-    background: linear-gradient(114#lista-devs .61deg, #ffffff0d 1#lista-devs .08%, #ffffff1e 99#lista-devs .26%);
+    background: linear-gradient(114 .61deg, #ffffff0d 1 .08%, #ffffff1e 99 .26%);
     box-shadow: 30px 30px 60px #00000080;
     border: 1px solid #ffffffcc;
     border-radius: 80px;
@@ -357,8 +357,8 @@
     font-size: 14px;
     padding: 2px 10px;
     border-radius: 20px;
-    background-color: white;
-    color: var(--azulP);
+    background-color: var(--rosa);
+    color: var(--branco);
 }
 
 
@@ -456,10 +456,10 @@
         border-radius: 10%;
         padding: 10px;
 
-        -moz-transition: all 0#lista-devs .5s ease;
-        -webkit-transition: all 0#lista-devs .5s ease;
-        -o-transition: all 0#lista-devs .5s ease;
-        transition: all 0#lista-devs .5s ease;
+        -moz-transition: all 0 .5s ease;
+        -webkit-transition: all 0 .5s ease;
+        -o-transition: all 0 .5s ease;
+        transition: all 0 .5s ease;
     }
 
     #lista-devs .menu_links * {

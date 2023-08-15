@@ -37,16 +37,16 @@ export default function ListaDevs(){
         }
     ])
 
-    const [skillDigitada, setSkillDigitada] = useState<string>("")
+    const [skillDigitada, setSkillDigitada] = useState<string>("");
     // variável de skill que foi digitada
 
-    const [listaDevsFiltrados, setListaDevsFiltrados] = useState<any[]>(devs)
+    const [listaDevsFiltrados, setListaDevsFiltrados] = useState<any[]>(devs);
     // variável de lista de devs que foram filtrados por skill
 
     function buscarPorSkill(event: any){
         event.preventDefault()
 
-        const devsFiltrados = devs.filter((dev: any) => dev.skill.includes(skillDigitada.toLocaleUpperCase()))
+        const devsFiltrados = devs.filter((dev: any) => dev.skills.includes(skillDigitada.toLocaleUpperCase()));
 
         if(devsFiltrados.length === 0){
             alert("Nenhum desenvolvedor(a) com essa skill.")
@@ -64,12 +64,12 @@ export default function ListaDevs(){
     }
 
     return(
-        <main id="lista-devs">
+        <main id="lista-devs" onSubmit={buscarPorSkill}>
         <div className="container container_lista_devs">
             <div className="lista_devs_conteudo">
                 <h1>Lista de Devs</h1>
                 <hr/>
-                <form method="post" onSubmit={buscarPorSkill}>
+                <form method="post">
                     <div className="wrapper_form">
                         <label htmlFor="busca">Procurar desenvolvedores</label>
                         <div className="campo-label">
