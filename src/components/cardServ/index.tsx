@@ -1,6 +1,6 @@
 import "./style.css"
 
-export default function CardServs(props: any) {
+export default function CardServ(props: any) {
 
     return (
         <div className="servico">
@@ -11,8 +11,8 @@ export default function CardServs(props: any) {
             <p>{props.descricao}</p>
             <div className="techs">
                 {
-                    props.techs.map((tech: string, index: number) => {
-                        return <span key={index}>{tech}</span>
+                    props.techs.map((techs: string, index: number) => {
+                        return <span key={index}>{techs}</span>
                     })
                 }
             </div>

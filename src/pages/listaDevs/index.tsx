@@ -46,7 +46,8 @@ export default function ListaDevs(){
         if(devsFiltrados.length === 0){
             alert("Nenhum desenvolvedor(a) com essa skill.")
         } else {
-            setListaDevsFiltrados(devsFiltrados)
+            // setListaDevsFiltrados(devsFiltrados)
+            setDevs(devsFiltrados)
         }
     }
 
