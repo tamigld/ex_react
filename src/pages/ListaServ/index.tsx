@@ -24,7 +24,7 @@ function ListaServ(){
         api.get("servicos").then((response:any) => {
             // console.log(response.data)
             setServicos(response.data)
-        })
+        }).catch(error => console.log("Erro ao obter os dados de serviço.", error));
     }
 
     function buscarPorSkill(event: any){

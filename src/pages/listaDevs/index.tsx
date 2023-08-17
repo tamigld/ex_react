@@ -34,7 +34,7 @@ export default function ListaDevs(){
             console.log(response.data)
             setDevs(response.data)
             // define os devs como a resposta que veio da api (localhost:3000/users)
-        })
+        }).catch(error => console.log("Erro ao obter os dados dos desenvolvedores.", error));
     }
 
     
