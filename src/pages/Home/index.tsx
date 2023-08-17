@@ -5,6 +5,9 @@ import ImgClientes from "../../assets/img/clientes.png"
 import ImgMaosDev from "../../assets/img/maos_dev.png"
 import ImgAlfinete from "../../assets/img/alfinete.png"
 
+import Footer from '../../components/footer'
+
+
 import {Link} from 'react-router-dom'
 
 
@@ -124,8 +127,10 @@ function Home() {
                         </div>
                     </div>
                     <Link to="lista/servicos">Ver mais serviços</Link>
+                    <Link to="cadastro/serv">Cadastrar um serviço</Link>
                 </section>
             </main>
+            <Footer/>
         </>
 
     )
