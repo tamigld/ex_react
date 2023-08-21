@@ -6,13 +6,14 @@ import {Route, Routes, BrowserRouter} from 'react-router-dom'
 
 // import App from './App'
 import './index.css'
-import Home from './pages/home'
-import ListaServ from './pages/listaServ'
+import Home from './pages/Home'
+import ListaServ from './pages/ListaServ'
 import ListaDevs from './pages/listaDevs'
 import CadastroDev from './pages/cadastroDev'
 import CadastroServ from './pages/cadastroServ'
 import Login from './pages/login'
 import Header from './components/header'
+import PerfilUsuario from './pages/PerfilUsuario'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='cadastro/dev' element={<CadastroDev/>}/>
         <Route path='cadastro/serv' element={<CadastroServ/>}/>
         <Route path='login' element={<Login/>}/>
+        <Route path='perfil/:idUsuario' element={<PerfilUsuario/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

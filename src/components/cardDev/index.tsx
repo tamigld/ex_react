@@ -1,4 +1,7 @@
 import "./style.css"
+import { Link } from "react-router-dom"
+
+
 export default function CardDev(props: any) {
     return (
         <>
@@ -8,6 +11,7 @@ export default function CardDev(props: any) {
                     <div className="contato_dev">
                         <h3>{props.nome}</h3>
                         <p>{props.email}</p>
+                        <Link className="linkPerfil" to={ "/perfil/" + props.id }>{ "Acessar perfil" }</Link>
                     </div>
                 </div>
                 <div className="techs">

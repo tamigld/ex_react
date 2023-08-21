@@ -63,7 +63,7 @@ function ListaServ(){
                     <h1>Lista de Serviços</h1>
                     <hr/>
                     <form method="post">
-                        <div className="wrapper_form">
+                        <div id="wrapper_form" className="wrapper_form">
                             <label htmlFor="busca">Procurar serviços</label>
                             <div className="campo-label">
                                 <input type="search" name="campo-busca" id="busca" placeholder="Buscar serviços por tecnologias..." onChange={retornoServicosGeral}/>

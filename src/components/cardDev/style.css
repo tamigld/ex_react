@@ -23,6 +23,14 @@
     justify-content: space-around;
 }
 
+.linkPerfil{
+    color: white;
+}
+
+.linkPerfil:hover{
+    color: #0099ff;
+}
+
 .grupo_contato img {
     height: 100%;
     border-radius: 50%;
