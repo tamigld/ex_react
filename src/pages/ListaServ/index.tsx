@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import "./style.css"
 import api from "../../utils/api"
 import CardServ from "../../components/cardServ"
+import { Link } from "react-router-dom"
 
 
 function ListaServ(){
@@ -76,6 +77,7 @@ function ListaServ(){
                         {servicos.map((servico:any, index:number) =>{
                             return <li key={index}>
                                 <CardServ
+                                id={servico.id}
                                 titulo={servico.nome}
                                 valor={servico.valor}
                                 descricao={servico.descricao}

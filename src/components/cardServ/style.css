@@ -196,6 +196,11 @@ main#lista-servicos {
     width: 65%;
 }
 
+#lista-servicos .Link{
+    color: var(--branco);
+    text-decoration: none;
+}
+
 #lista-servicos .servico p {
     margin-bottom: 30px;
 }

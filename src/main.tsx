@@ -14,6 +14,7 @@ import CadastroServ from './pages/cadastroServ'
 import Login from './pages/login'
 import Header from './components/header'
 import PerfilUsuario from './pages/PerfilUsuario'
+import VisualizarServico from './pages/VisualizarServico'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -22,7 +23,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Header/> 
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='lista/servicos' element={<ListaServ/>}/>
+        <Route path='listaServicos' element={<ListaServ/>}/>
+        <Route path='listaServicos/:idServico' element={<VisualizarServico/>}/>
         <Route path='lista/devs' element={<ListaDevs/>}/>
         <Route path='cadastro/dev' element={<CadastroDev/>}/>
         <Route path='cadastro/serv' element={<CadastroServ/>}/>

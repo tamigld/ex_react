@@ -80,9 +80,7 @@ function Home() {
                                 <li>procurar por desenvolvedores</li>
                             </ul>
                             <div>
-                                <a className="botao clientes_botao_cli" href="#">
-                                    criar conta
-                                </a>
+                            <Link className="botao clientes_botao_cli" to="cadastro/dev">Criar conta</Link>
                             </div>
                         </div>
                     </div>
@@ -96,9 +94,7 @@ function Home() {
                             <li>divulgar suas hardskills</li>
                         </ul>
                         <div>
-                            <a className="botao clientes_botao_devs" href="#">
-                                criar conta
-                            </a>
+                        <Link className="botao clientes_botao_devs" to="cadastro/dev">Criar conta</Link>
                         </div>
                     </div>
                     <img src={ ImgMaosDev } alt="" />
@@ -127,7 +123,6 @@ function Home() {
                         </div>
                     </div>
                     <Link to="lista/servicos">Ver mais serviços</Link>
-                    <Link to="cadastro/serv">Cadastrar um serviço</Link>
                 </section>
             </main>
             <Footer/>
