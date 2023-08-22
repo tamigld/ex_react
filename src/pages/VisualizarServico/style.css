@@ -26,7 +26,7 @@
 #main_visualizarservico .servico {
     width: 85%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 30px;
 
     border: solid 1px #909090;
     border-radius: 16px;
@@ -48,6 +48,10 @@
     font-size: 20px;
 }
 
+#main_visualizarservico h2{
+    width: 70%;
+}
+
 #main_visualizarservico .topo_servico h3 {
     width: 65%;
 }
@@ -57,10 +61,9 @@
 }
 
 #main_visualizarservico .servico .techs {
-    max-width: 70%;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #main_visualizarservico .servico .techs span {
@@ -74,4 +77,30 @@
     background-color: var(--rosa);
     color: white;
     font-weight: 600;
+}
+
+#main_visualizarservico .topo_servico span{
+    font-size: 25px;
+    padding: 3px 13px;
+    height: 100%;
+
+    border-radius: 20px;
+    background-color: var(--rosa);
+    color: var(--branco);
+    font-weight: 600;
+}
+
+footer>a{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main_visualizarservico footer{
+    background-image: none;
+}
+
+.icon_voltar{
+    width: 50px;
+    fill: var(--branco);
+    padding: 10px;
 }
