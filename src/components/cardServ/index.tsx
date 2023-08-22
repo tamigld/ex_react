@@ -4,12 +4,12 @@ import { Link } from "react-router-dom"
 export default function CardServ(props: any) {
 
     return (
-        <div className="servico">
+        <div className="servico" id="card-serv">
             <div className="topo_servico">
                 <h3>
                 <Link className="Link" to={ "/listaServicos/" + props.id }>{props.titulo}</Link>
                 </h3>
-                <span>{props.valor}</span>
+                <span>R${props.valor}</span>
             </div>
             <p>{props.descricao}</p>
             <div className="techs">
