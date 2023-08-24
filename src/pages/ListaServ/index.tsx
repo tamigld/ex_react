@@ -70,6 +70,9 @@ function ListaServ(){
                                 <input type="search" name="campo-busca" id="busca" placeholder="Buscar serviços por tecnologias..." onChange={retornoServicosGeral}/>
                                 <button type="submit">Buscar</button>
                             </div>
+                        <div className="link_cadastrar">
+                        <Link className="link" to="/cadastroServico">Cadastrar um serviço</Link>
+                        </div>
                         </div>
                     </form>
                     <div className="wrapper_lista">

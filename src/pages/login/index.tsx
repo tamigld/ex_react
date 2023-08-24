@@ -1,6 +1,12 @@
 import './style.css'
 
+import { useEffect } from 'react'
+
 function Login(){
+    useEffect(() => {
+        document.title = "VSConnect - Login"
+    })
+
     return(
         <>
             <main id='page-login'>

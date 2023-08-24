@@ -60,7 +60,7 @@ function Header() {
                         <div id="menu_links" className="menu_links">
                             <Link to="/">Home</Link>
                             <Link to="listaServicos">Serviços</Link>
-                            <Link to="cadastro/dev">Cadastro</Link>
+                            <Link to="cadastroUsuario">Cadastro</Link>
                         </div>
                         <a className="header_icone_login" href="../Login/index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

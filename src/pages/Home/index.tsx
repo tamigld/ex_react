@@ -9,6 +9,7 @@ import Footer from '../../components/footer'
 
 
 import {Link} from 'react-router-dom'
+import { useEffect } from "react"
 
 
 function Home() {
@@ -37,6 +38,10 @@ function Home() {
         menu_barras.classList.toggle("ativo"); // Alterna a classe 'ativo' no botão do menu
     
     }
+
+    useEffect(() => {
+        document.title = "VSConnect - Home"
+    })
 
     return (
         <>
@@ -80,7 +85,7 @@ function Home() {
                                 <li>procurar por desenvolvedores</li>
                             </ul>
                             <div>
-                            <Link className="botao clientes_botao_cli" to="cadastro/dev">Criar conta</Link>
+                            <Link className="botao clientes_botao_cli" to="cadastroUsuario">Criar conta</Link>
                             </div>
                         </div>
                     </div>
@@ -94,7 +99,7 @@ function Home() {
                             <li>divulgar suas hardskills</li>
                         </ul>
                         <div>
-                        <Link className="botao clientes_botao_devs" to="cadastro/dev">Criar conta</Link>
+                        <Link className="botao clientes_botao_devs" to="cadastroUsuario">Criar conta</Link>
                         </div>
                     </div>
                     <img src={ ImgMaosDev } alt="" />
@@ -122,7 +127,7 @@ function Home() {
                             <p>Proposta: R$750,00</p>
                         </div>
                     </div>
-                    <Link to="lista/servicos">Ver mais serviços</Link>
+                    <Link to="listaServicos">Ver mais serviços</Link>
                 </section>
             </main>
             <Footer/>

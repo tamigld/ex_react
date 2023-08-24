@@ -172,7 +172,8 @@
     background-image:
         linear-gradient(180deg, #060821 0%, #06082120 25%, #0608218f 80%, #060821 100%),
         url("../../assets/img/background_login.png");
-    min-height: calc(100vh - 339px);
+    /* min-height: calc(100vh - 339px); */
+    min-height: calc(100vh - 80px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -250,6 +251,25 @@
     font-size: 28px;
 }
 
+#lista-servicos .link{
+    transition: ease-in 0.2s;
+    font-family: var(--font2);
+    /* text-decoration: none; */
+    font-size: 16px;
+    color: var(--branco);
+    margin-top: 10px;
+    justify-self: flex-end;
+}
+
+#lista-servicos .link:hover{
+    color: var(--azul);
+}
+
+#lista-servicos .link_cadastrar{
+    display: flex;
+    justify-content: flex-end;
+}
+
 #lista-servicos .campo-label input {
     height: 37px;
     width: 75%;
@@ -296,7 +316,7 @@
 
 #lista-servicos .lista_servicos_conteudo ul {
     list-style: none;
-    padding: 50px 0;
+    /* padding: 50px 0; */
 }
 
 #lista-servicos .lista_servicos_conteudo li {

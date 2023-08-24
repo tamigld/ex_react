@@ -1,4 +1,5 @@
-.main_cadastro {
+/* MAIN */
+.main_cad_servico {
     background-image:
         linear-gradient(180deg, #060821 0%, #06082120 25%, #0608218f 80%, #060821 100%),
         url("../../assets/img/background_login.png");
@@ -8,13 +9,13 @@
     background-position: bottom;
 }
 
-.main_cadastro .container_cad {
+.main_cad_servico .container_cad_serv {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main_cadastro .cad_conteudo {
+.main_cad_servico .cad_serv_conteudo {
     background: linear-gradient(114.61deg, #ffffff0d 1.08%, #ffffff1e 99.26%);
     box-shadow: 30px 30px 60px #00000080;
     border: 1px solid #ffffffcc;
@@ -30,13 +31,13 @@
     margin: 100px 0;
 }
 
-.main_cadastro h1 {
+.main_cad_servico h1 {
     font-family: var(--font1);
     font-size: 50px;
     text-align: center;
 }
 
-.main_cadastro hr {
+.main_cad_servico hr {
     margin: 20px auto;
     width: 80%;
     height: 4px;
@@ -45,63 +46,7 @@
     border-radius: 50%;
 }
 
-.main_cadastro .cad_linha_checkbox {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.main_cadastro .cad_container_checkbox{
-    width: 43px;
-    position: relative;
-}
-
-.main_cadastro .cad_box_checkbox {
-    width: 100%;
-    height: 24px;
-    background-color: #ffffff20;
-    border: 2px solid #e6a3ff;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.cad_checkbox:checked ~ .cad_box_checkbox{
-
-}
-
-.main_cadastro .cad_checkbox {
-    display: none;
-    /* position: absolute;
-    left: -100vw; */
-}
-
-.main_cadastro .cad_label {
-    width: 20px;
-    height: 20px;
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    z-index: 1;
-    background-color: var(--azul);
-    border-radius: 10px;
-    box-shadow: none;
-    transition: cubic-bezier(0.895, 0.07, 0.685, 0.68);
-}
-
-.main_cadastro .cad_checkbox:checked{
-    /* margin-bottom: 100px; */
-
-}
-
-.main_cadastro .cad_checkbox:checked + .cad_label {
-    left: 21px;
-    background-color: var(--rosa);
-}
-
-.main_cadastro .cad_formulario {
+.main_cad_servico .cad_serv_formulario {
     width: 95%;
     max-width: 460px;
     display: flex;
@@ -109,37 +54,20 @@
     font-family: var(--font2);
 }
 
-.main_cadastro .cad_linha1_input,
-.main_cadastro .cad_linha2_input {
-    display: flex;
-    margin: 15px 0;
-    justify-content: space-between;
-    gap: 10%
-}
-
-.main_cadastro .cad_linha1_input>div:nth-child(1),
-.main_cadastro .cad_linha2_input>div:nth-child(2) {
-    flex: 1;
-}
-
-.main_cadastro .cad_linha1_input>div:nth-child(2),
-.main_cadastro .cad_linha2_input>div:nth-child(1) {
-    flex: 2;
-}
-
-.main_cadastro .cad_box_input {
+.main_cad_servico .cad_serv_box_input {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 15px 0;
 }
 
-.main_cadastro label {
+.main_cad_servico label {
     font-size: 20px;
 }
 
-.main_cadastro .cad_box_input2 > input,
-.main_cadastro .cad_box_input > input {
+.main_cad_servico .cad_serv_box_input textarea,
+.main_cad_servico .cad_serv_box_input2>input,
+.main_cad_servico .cad_serv_box_input>input {
     width: 100%;
     padding: 8px;
     border-radius: 20px;
@@ -149,78 +77,60 @@
     backdrop-filter: blur(15px);
     color: var(--branco);
     font-size: 16px;
+    resize: none;
 }
 
-.main_cadastro #cad_select_skill:focus-visible,
-.main_cadastro .cad_box_input2 > input:focus-visible,
-.main_cadastro .cad_box_input > input:focus-visible {
+.main_cad_servico .cad_serv_box_input textarea {
+    height: 100px;
+}
+
+.main_cad_servico .cad_serv_box_input textarea:focus-visible,
+.main_cad_servico #cad_select_skill:focus-visible,
+.main_cad_servico .cad_serv_box_input2>input:focus-visible,
+.main_cad_servico .cad_serv_box_input>input:focus-visible {
     outline: 2px solid var(--rosa);
 }
 
 /* Cor de fundo do autocomplete */
-.main_cadastro input:-webkit-autofill {
+.main_cad_servico input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #524569 inset;
 }
 
 /* Cor do texto do autocomplete */
-.main_cadastro input:-webkit-autofill {
+.main_cad_servico input:-webkit-autofill {
     -webkit-text-fill-color: var(--branco);
 }
 
-.main_cadastro .cad_box_input2 > input::placeholder,
-.main_cadastro .cad_box_input > input::placeholder {
+.main_cad_servico .cad_serv_box_input textarea::placeholder,
+.main_cad_servico .cad_serv_box_input2>input::placeholder,
+.main_cad_servico .cad_serv_box_input>input::placeholder {
     color: #ffffff80;
     font-size: 15px;
+    font-family: var(--font2);
 }
 
-.main_cadastro .cad_formulario > span{
+.main_cad_servico .cad_serv_formulario>span {
     font-family: var(--font1);
     font-size: 30px;
     text-align: center;
     margin-top: 30px;
 }
 
-.main_cadastro .cad_hard_skill > span {
-    font-family: var(--font1);
-    font-size: 1.875em;
-    text-align: center;
-    margin-top: 30px;
-
-}
-
-.main_cadastro .cad_uf {
-    text-transform: uppercase;
-}
-
-.main_cadastro .cad_hard_skill {
+.main_cad_servico .cad_hard_skill {
     display: flex;
     flex-direction: column;
     position: relative;
     right: 182px;
-    /* background-color: yellow; */
-    /* height: 0; */
-    /* font-size: 0; */
-    width: 460px; 
+    width: 460px;
     display: none;
-    /* transition-delay: 1s;
-    transition-property: height;
-    transition-duration: 1s; */
-    /* transition: .3s height cubic-bezier(0.895, 0.07, 0.685, 0.68); */
 }
 
-.main_cadastro .cad_checkbox:checked ~ .cad_hard_skill {
-    /* transition-delay: 1S; */
-    /* height: 300px; */
-    /* font-size: 16px; */
-    display: flex;
-}
-
-.main_cadastro .cad_linha_select{
+.main_cad_servico .cad_linha_select {
     display: flex;
     gap: 10%;
 }
 
-.main_cadastro #cad_select_skill{
+.main_cad_servico #cad_select_skill {
     flex: 2;
     padding: 8px;
     border-radius: 20px;
@@ -229,18 +139,18 @@
     box-shadow: 30px 30px 60px 0px #00000090;
     backdrop-filter: blur(15px);
     color: #ffffffaa;
-    font-size:  16px;
+    font-size: 16px;
 }
 
-.main_cadastro #cad_select_skill option{
+.main_cad_servico #cad_select_skill option {
     /* appearance: none; */
     background-color: #454158;
     /* background: linear-gradient(136deg, #ffffff1a 0%, #ffffff0b 100%); */
 }
 
-.main_cadastro #cad_btn_inserir{
+.main_cad_servico #cad_btn_inserir {
     flex: .8;
-    font-size:  18px;
+    font-size: 18px;
     color: var(--branco);
     border: 4px solid var(--rosa);
     /* padding: 4px 30px; */
@@ -251,14 +161,14 @@
     cursor: pointer;
 }
 
-.main_cadastro #cad_lista_skills{
+.main_cad_servico #cad_lista_skills {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     padding: 50px 0;
 }
 
-.main_cadastro .cad_item_skill{
+.main_cad_servico .cad_item_skill {
     border: 1px solid #b5b5b5;
     background: var(--branco);
     color: var(--azulP);
@@ -270,7 +180,7 @@
     gap: 10px;
 }
 
-.main_cadastro .cad_item_excluir{
+.main_cad_servico .cad_item_excluir {
     background: none;
     border: none;
     display: flex;
@@ -278,17 +188,17 @@
     cursor: pointer;
 }
 
-.main_cadastro .cad_item_excluir:hover{
+.main_cad_servico .cad_item_excluir:hover {
     scale: 1.1;
-    filter:drop-shadow(0 0 2px var(--azul));
+    filter: drop-shadow(0 0 2px var(--azul));
 }
 
-.main_cadastro .cad_item_excluir svg{
+.main_cad_servico .cad_item_excluir svg {
     fill: var(--rosa);
     height: 16px;
 }
 
-.main_cadastro .cad_botao {
+.main_cad_servico .cad_botao {
     align-self: center;
     font-family: var(--font1);
     color: var(--branco);

@@ -13,6 +13,15 @@ import api from "../../utils/api"
 
 function PerfilUsuario() {
 
+    function parseListaSkills(){
+        if(typeof listaSkills === "string"){
+            return JSON.parse(listaSkills)
+        } else {
+            return listaSkills
+        }
+    }
+    // função para converter as skills que estão em um formato que não é possível renderizar no app
+
     const {idUsuario} = useParams()
 
     const [nome, setNome] = useState<string>("")
@@ -75,7 +84,7 @@ function PerfilUsuario() {
                         <p>Tecnologias principais: </p>
                         <div className="lista_skills">
                             {
-                                listaSkills.map( (skill: any, index:number ) => {
+                                parseListaSkills().map( (skill: any, index:number ) => {
                                     return <span key={index}>{skill}</span>
                                 })
 

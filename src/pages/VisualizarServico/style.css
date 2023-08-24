@@ -95,19 +95,21 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    height: 50px;
 }
 
 #main_visualizarservico footer{
     background-image: none;
 }
 
-.icon_voltar{
+.icon_voltar, .icon_apagar{
     transition: ease-in 0.1s;
     fill: var(--branco);
     padding: 10px;
-    width: 50px;
+    width: 45px;
 }
 
-.icon_voltar:hover{
+.icon_voltar:hover,
+.icon_apagar:hover{
     fill: var(--rosa);
 }
