@@ -14,10 +14,16 @@ import secureLocalStorage from "react-secure-storage"
 function Header(props:any) {
     const navigate = useNavigate();
 
-    function sair(){     
-        secureLocalStorage.removeItem("user")
-        navigate("/")
-        navigate(0)
+    function sair(event:any){   
+        event.preventDefault()
+
+        if (confirm("Tem certeza que deseja sair?") == true) {
+            secureLocalStorage.removeItem("user")
+            navigate("/")
+            navigate(0)
+          }
+
+
     }
 
 
@@ -86,8 +92,8 @@ function Header(props:any) {
                         {
                             props.usuario.logado ?
                                 <>
-                                    <span>Olá, {props.usuario.nomeUsuario}</span>
-                                    <Link onClick={sair} className="btn_sair" to="/">Sair</Link>
+                                    <span>Olá, {props.usuario.nomeUsuario}! <Link onClick={sair} className="btn_sair" to="/">Sair?</Link></span>
+                                    
                                 </>
                                 :
                                 <Link className="header_botao_login" to="/login">login</Link>
