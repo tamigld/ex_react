@@ -21,7 +21,7 @@ export default function ListaDevs(){
     // variável de lista de devs que foram filtrados por skill
 
     useEffect(() => {
-        document.title = "VSConnect - Lista de Devs"
+        document.title = "Lista de Devs - VSConnect"
         // muda o título da página
         listarDesenvolvedores()
         // função de listar desenvolvedores que está escrito na linha 50

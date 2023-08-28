@@ -16,6 +16,11 @@ header {
     background-color: var(--azulP);
 }
 
+header nav span {
+    color: var(--branco);
+    font-size: 20px;
+}
+
 .header_conteudo {
     display: flex;
     justify-content: space-between;
@@ -109,6 +114,14 @@ header nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-family: var(--font2);
+}
+
+.btn_sair{
+    border: 2px solid crimson;
+    padding: 2px 10px;
+    border-radius: 30%;
+    font-size: 12px;
+    margin-left: -40px;
 }
 
 .header_botao_login {

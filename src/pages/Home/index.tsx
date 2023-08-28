@@ -40,7 +40,7 @@ function Home() {
     }
 
     useEffect(() => {
-        document.title = "VSConnect - Home"
+        document.title = "Home - VSConnect"
     })
 
     return (

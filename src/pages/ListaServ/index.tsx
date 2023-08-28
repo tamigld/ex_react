@@ -17,7 +17,7 @@ function ListaServ(){
     // variável de lista de serviços que foram filtrados por skill
     
     useEffect(() =>{
-        document.title = "VSConnect - Lista de Serviços"
+        document.title = "Lista de Serviços - VSConnect"
         listarServicos()
     }, [])
 
