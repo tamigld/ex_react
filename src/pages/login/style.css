@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--poppins);
+}
+
+#login{
+    /* height: calc(100vh - 40px); */
+    overflow: hidden;
+
+    display: flex;
+    color: var(--cinza);
+}
+
+:root{
+    --vermelho: #B51D44;
+    --cinza: #B4A9A9;
+    --branco: #ffffff;
+    --preto: #000000;
+    --poppins: 'Poppins', sans-serif;
+}
+
+#left-side{
+    width: 50%;
+    height: 100vh;
+    background-color: var(--vermelho);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .efect{
+    width: 10%;
+    background-color: var(--vermelho);
+    border: 50px solid;
+    border-color: #B51D44 rgb(180, 169, 169, 0) rgb(180, 169, 169, 0)  #B51D44; 
+} */
+
+
+#rigth-side{
+    width: 50%;
+}
+
+#rigth-side>div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formLogin{
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+
+    justify-content: space-between;
+
+    margin: 30px 0;
+}
+
+.formLogin input{
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid var(--preto);
+}
+
+.formLogin button{
+    background-color: var(--vermelho);
+    border: none;
+    color: var(--branco);
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+
+.formLogin a{
+    color: var(--cinza);
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}

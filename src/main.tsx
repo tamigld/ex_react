@@ -6,15 +6,15 @@ import {Route, Routes, BrowserRouter} from 'react-router-dom'
 import './index.css'
 
 // pages
-import Login from './pages/home'
-import Header from './components/header'
+import Login from './pages/login'
+import Homepage from './pages/home'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-    {/* <Header/> */}
       <Routes>
-        <Route path='/' element={<Login/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/' element={<Homepage/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
